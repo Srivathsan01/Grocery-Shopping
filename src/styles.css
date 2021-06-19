@@ -1,3 +1,100 @@
 body {
+  text-align: center;
   font-family: sans-serif;
+  background-image: url("../src/bg.png");
+  background-repeat: no-repeat;
+}
+#maincontainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#formcontainer {
+  display: inline-block;
+  float: left;
+  padding: 20px;
+  height: 50%;
+  width: 40%;
+  background-color: lightseagreen;
+  border-style: groove;
+  border-radius: 30px;
+  border-color: black;
+}
+@media (max-width: 1300px) {
+  #maincontainer {
+    display: block;
+  }
+}
+#grocerylist {
+  background-color: orange;
+  flex: 1;
+  display: inline-block;
+  justify-content: center;
+  border: 3px black solid;
+  padding: 50px;
+  width: 50%;
+  border-radius: 25px;
+  margin: 30px;
+}
+
+.div p {
+  text-align: left;
+  word-spacing: 1px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.listItem {
+  display: grid;
+  grid-template-columns: 50% 30% 10% 10%;
+  height: fit-content;
+  margin: 10px;
+  padding: 10px;
+  overflow: scroll;
+  border: 2px black solid;
+  box-shadow: #e6e6e6 0px 1px 5px 1px;
+  border-radius: 20px;
+}
+
+.listItemName {
+  font-weight: bold;
+  padding-right: 20px;
+}
+.listItemQuantity {
+  font-weight: bold;
+}
+#itemName {
+  border: 2px solid;
+  border-color: purple;
+  vertical-align: center;
+  text-align: center;
+  border-radius: 19px;
+  width: 70%;
+  padding: 10px;
+}
+#itemQty {
+  margin: 10px;
+  border: 2px solid;
+  border-color: orange;
+  vertical-align: center;
+  text-align: center;
+  border-radius: 19px;
+  width: 70%;
+  padding: 10px;
+}
+
+.editButton {
+  height: 40px;
+  float: right;
+  width: 50px;
+  border-radius: 40%;
+  background-color: lightgreen;
+}
+
+.deleteButton {
+  height: 40px;
+  width: 50px;
+  float: right;
+  border-radius: 40%;
+  background-color: Red;
 }

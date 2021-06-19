@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Grocery Shopping</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+    <meta charset="UTF-8" />
+  </head>
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-</head>
-
-<body>
-	<div id="app"></div>
-
-	<script src="src/index.js">
-	</script>
-</body>
-
+  <body >
+    <div id="maincontainer">
+      <div id="formcontainer">
+          <h2>Add Grocery Item</h2>
+          <form>
+            <p>Item Name</p>
+            <br />
+            <input type="text" id="itemName" name="itemName" required />
+            <p>Item Quantity</p>
+            <input type="number" id="itemQty" name="itemQty" required />
+            <button type="button" id="addItem">Add</button>
+          </form>
+      </div>
+        <div id="grocerylist">
+          <h2>Grocery List</h2>
+          <div id="groceryListView"></div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
 </html>
